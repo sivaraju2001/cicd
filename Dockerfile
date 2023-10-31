@@ -7,8 +7,6 @@ WORKDIR /app
 # Copy the application code into the container
 COPY . .
 
-# Install application dependencies
-RUN pip install -r .
 
 # Specify the command to run when the container starts
 CMD ["python", "app.py"]
